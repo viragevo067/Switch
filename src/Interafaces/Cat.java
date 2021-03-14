@@ -10,7 +10,7 @@ public class Cat  implements AnimalAction{
 
     }
     public void fuction(){
-        System.out.println(" cat catches mice");
+        System.out.println("cat catches mice");
 
     }
 
