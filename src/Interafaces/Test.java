@@ -9,6 +9,9 @@ public class Test {
         dog.voice();
         Dog dog1 = new Dog();
         dog1.up();
+        dog1.fuction();
+        dog1.fuction();
+        dog1.voice();
         Cat cat = new Cat();
         cat.down();
         cat.move();
