@@ -10,8 +10,11 @@ public class Dog implements AnimalAction{
 
     }
     public void fuction(){
-        System.out.println(" dog guards the house");
+        System.out.println("dog guards the house");
 
+    }
+    public void up(){
+        System.out.println("dog is jumping");
     }
 
 

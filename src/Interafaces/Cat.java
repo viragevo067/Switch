@@ -13,6 +13,9 @@ public class Cat  implements AnimalAction{
         System.out.println("cat catches mice");
 
     }
+    public void down(){
+        System.out.println("cat is lie down");
+    }
 
 
 }
