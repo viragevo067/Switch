@@ -1,17 +1,23 @@
 package parsing;
 
 
+import java.util.Scanner;
+
 public class Parsing {
 
     public static void main(String[] args) {
-        String start = "1,100,USD,оплата заказа";
-        int id = 1;
-        int amount = 100;
-        String comment = "оплата заказа";
-        int line = 1;
-        String result = "ok";
-        String finish = "{'id':1, 'amount':100, 'comment':'оплата заказа', 'line':1, 'result':'OK' }";
-        System.out.println(start + id + amount + comment + line + result + finish);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите строку:");
+        String start = sc.nextLine();
+        convert(start);
+    }
+
+    public static void convert(String start) {
+        String[] strings = start.split(",");
+        String finish = "{'id':" + strings[0] + ", 'amount':" + strings[1] + ", 'comment':'" + strings[3]
+                + "', 'line':1, 'result':'OK' }";
+        System.out.println("Результат");
+        System.out.println(finish);
     }
 }
 
